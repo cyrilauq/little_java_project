@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896d8d61-5e60-49bd-be0c-95e20d63d54e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/StartView.java" afterDir="false" />
+    <list default="true" id="896d8d61-5e60-49bd-be0c-95e20d63d54e" name="Changes" comment="add startview and on close operation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/GameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/StartView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/StartView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2Zypitg8O8pkPyTxBZvBUnFLZiZ" />
@@ -56,6 +60,26 @@
       <recent name="E:\Essai\little_java_project\tic_tact_toe\src\main\java\tic_tact_toe" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tic_tact_toe.Main" />
+      <module name="tic_tact_toe.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tic_tact_toe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,8 +88,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703404328771</updated>
-      <workItem from="1703404328792" duration="6052000" />
+      <workItem from="1703404328792" duration="8125000" />
     </task>
+    <task id="LOCAL-00001" summary="add startview and on close operation">
+      <created>1703411023865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703411023865</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +107,26 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="add startview and on close operation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add startview and on close operation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tic_tact_toe/views/StartView.java</url>
+          <line>10</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tic_tact_toe/views/MainWindow.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

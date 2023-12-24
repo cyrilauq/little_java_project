@@ -1,5 +1,6 @@
 package tic_tact_toe;
 
+import tic_tact_toe.views.GameView;
 import tic_tact_toe.views.MainWindow;
 import tic_tact_toe.views.StartView;
 
@@ -13,7 +14,8 @@ public class Main {
     private static MainWindow getMainWindow() {
         return new MainWindow(
             "Tic Tac Toe",
-            new StartView("StartView")
+            new StartView("StartView"),
+            new GameView("GameView")
         );
     }
 }
