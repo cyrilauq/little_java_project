@@ -1,16 +1,16 @@
 package tic_tact_toe.views;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.Objects;
 import java.util.function.Consumer;
 
 public class View extends JPanel {
 
     private final String title;
-    private final Consumer<String> goToConsumer;
+    private Consumer<String> goToConsumer;
 
-    public View(final String title, final Consumer<String> goToConsumer) {
-        this.goToConsumer = goToConsumer;
+    public View(final String title) {
         this.title = title;
     }
 
@@ -20,6 +20,10 @@ public class View extends JPanel {
 
     public void goTo(final String viewName) {
         goToConsumer.accept(viewName);
+    }
+
+    public void setConsumer(final Consumer<String> goToConsumer) {
+        this.goToConsumer = goToConsumer;
     }
 
     @Override

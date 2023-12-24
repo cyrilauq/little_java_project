@@ -1,7 +1,9 @@
 package tic_tact_toe.views;
 
 import javax.swing.*;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -9,7 +11,7 @@ import java.util.Set;
  * It will be in charge of holding views and display them.
  */
 public class MainWindow extends JFrame {
-    private final Set<View> views = new HashSet<>();
+    private final Map<String, View> views = new HashMap<>();
 
     /**
      * Create a main window with the given title and a list of views.
@@ -19,15 +21,34 @@ public class MainWindow extends JFrame {
      */
     public MainWindow(final String title, final View... views) {
         super(title);
+
+        setSize(300, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        setViews(views);
+    }
+
+    public void start(final String viewName) {
+        goTo(viewName);
+        setVisible(true);
     }
 
     private void setViews(final View... views) {
         for (final View v : views) {
-            if(this.views.contains(v)) {
+            if(this.views.containsKey(v.getTitle())) {
                 throw new IllegalArgumentException("View " + v.getTitle() + " already exists");
             }
-            this.views.add(v);
+            v.setConsumer(this::goTo);
+            this.views.put(v.getTitle(), v);
         }
+    }
+
+    private void goTo(final String viewName) {
+        final View view = views.get(viewName);
+        if (view == null) {
+            throw new IllegalArgumentException("View " + viewName + " does not exist");
+        }
+        setContentPane(view);
     }
 
 }
