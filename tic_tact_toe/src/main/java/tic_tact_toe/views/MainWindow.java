@@ -2,9 +2,7 @@ package tic_tact_toe.views;
 
 import javax.swing.*;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Declare a class for the main window.

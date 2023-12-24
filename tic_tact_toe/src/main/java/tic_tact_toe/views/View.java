@@ -1,7 +1,6 @@
 package tic_tact_toe.views;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.Objects;
 import java.util.function.Consumer;
 
