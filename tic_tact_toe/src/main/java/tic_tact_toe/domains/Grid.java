@@ -1,7 +1,7 @@
 package tic_tact_toe.domains;
 
 public class Grid {
-    private char[][] board = new char[3][3];
+    private final char[][] board = new char[3][3];
 
     /**
      * Play for the current player at the given position

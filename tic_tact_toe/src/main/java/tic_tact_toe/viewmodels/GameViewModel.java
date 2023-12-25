@@ -6,7 +6,7 @@ import tic_tact_toe.viewmodels.args.PlayArgs;
 public class GameViewModel {
     private char currentPlayer = 'X';
     private char winner = ' ';
-    private Grid grid = new Grid();
+    private final Grid grid = new Grid();
 
     /**
      * Play for the current player at the given position
