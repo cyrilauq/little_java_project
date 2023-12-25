@@ -21,6 +21,7 @@ public class GameView extends View {
         for (int i = 0; i < 9; i++) {
             final JButton btn = new JButton();
             int finalI = i;
+            btn.setSize(50, 50);
             btn.addActionListener(e -> btnClicked(e, finalI));
             gamePnl.add(btn);
         }

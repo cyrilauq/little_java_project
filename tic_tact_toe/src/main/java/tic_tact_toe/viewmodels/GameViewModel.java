@@ -1,9 +1,12 @@
 package tic_tact_toe.viewmodels;
 
+import tic_tact_toe.domains.Grid;
 import tic_tact_toe.viewmodels.args.PlayArgs;
 
 public class GameViewModel {
     private char currentPlayer = 'X';
+    private char winner = ' ';
+    private Grid grid = new Grid();
 
     /**
      * Play for the current player at the given position
@@ -12,12 +15,20 @@ public class GameViewModel {
      *
      * @return      True if the game can continue, false otherwise
      */
-    public Boolean play(final PlayArgs args) {
-        currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
-        return true;
+    public boolean play(final PlayArgs args) {
+        if (grid.play(args.row(), args.col(), currentPlayer)) {
+            currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
+            return true;
+        }
+        winner = currentPlayer;
+        return false;
     }
 
     public char getCurrentPlayer() {
         return currentPlayer;
+    }
+    
+    public char getWinner() {
+        return winner;
     }
 }

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896d8d61-5e60-49bd-be0c-95e20d63d54e" name="Changes" comment="create pseudo game without an end">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/args/PlayArgs.java" afterDir="false" />
+    <list default="true" id="896d8d61-5e60-49bd-be0c-95e20d63d54e" name="Changes" comment="make action on button clicked and compute clicked btn's position">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/domains/Grid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tic_tact_toe/domains/GridTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/GameViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/GameViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/views/GameView.java" afterDir="false" />
@@ -23,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -47,6 +49,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "E:/Essai/little_java_project/tic_tact_toe/src/main/java/tic_tact_toe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,8 +64,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Essai\little_java_project\tic_tact_toe\src\main\java\tic_tact_toe" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tic_tact_toe.domains" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tic_tact_toe.Main" />
       <module name="tic_tact_toe.main" />
@@ -75,8 +85,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tic_tact_toe.domains.GridTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="GridTest.when3SignsInARowThenPlayerWins" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tic_tact_toe.domains.GridTest.when3SignsInARowThenPlayerWins&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="GridTest.whenNoPlayMakeThenGridIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tic_tact_toe.domains.GridTest.whenNoPlayMakeThenGridIsEmpty&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GridTest" />
+        <item itemvalue="Gradle.GridTest.when3SignsInARowThenPlayerWins" />
+        <item itemvalue="Gradle.GridTest.whenNoPlayMakeThenGridIsEmpty" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -89,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703404328771</updated>
-      <workItem from="1703404328792" duration="11530000" />
+      <workItem from="1703404328792" duration="17500000" />
     </task>
     <task id="LOCAL-00001" summary="add startview and on close operation">
       <created>1703411023865</created>
@@ -112,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703416176635</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="make action on button clicked and compute clicked btn's position">
+      <created>1703430444120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703430444120</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,23 +217,16 @@
     <MESSAGE value="add startview and on close operation" />
     <MESSAGE value="add GameView" />
     <MESSAGE value="create pseudo game without an end" />
-    <option name="LAST_COMMIT_MESSAGE" value="create pseudo game without an end" />
+    <MESSAGE value="make action on button clicked and compute clicked btn's position" />
+    <option name="LAST_COMMIT_MESSAGE" value="make action on button clicked and compute clicked btn's position" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tic_tact_toe/views/StartView.java</url>
-          <line>10</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tic_tact_toe/views/MainWindow.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/GameViewModel.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
