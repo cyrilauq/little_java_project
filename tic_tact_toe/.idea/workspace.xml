@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896d8d61-5e60-49bd-be0c-95e20d63d54e" name="Changes" comment="add some domain and logic">
-      <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/domains/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/domains/Grid.java" afterDir="false" />
+    <list default="true" id="896d8d61-5e60-49bd-be0c-95e20d63d54e" name="Changes" comment="some alert cleaning">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/domains/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/infrastructures/IGameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/infrastructures/Repositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/repositories/LocalGameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/GameViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/GameViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -171,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703404328771</updated>
-      <workItem from="1703404328792" duration="17777000" />
+      <workItem from="1703404328792" duration="18557000" />
     </task>
     <task id="LOCAL-00001" summary="add startview and on close operation">
       <created>1703411023865</created>
@@ -208,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703492154532</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some alert cleaning">
+      <created>1703492218569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703492218569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,17 +235,7 @@
     <MESSAGE value="create pseudo game without an end" />
     <MESSAGE value="make action on button clicked and compute clicked btn's position" />
     <MESSAGE value="add some domain and logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some domain and logic" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tic_tact_toe/viewmodels/GameViewModel.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="some alert cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="some alert cleaning" />
   </component>
 </project>

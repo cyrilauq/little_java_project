@@ -1,12 +1,13 @@
 package tic_tact_toe.viewmodels;
 
-import tic_tact_toe.domains.Grid;
+import tic_tact_toe.domains.Game;
+import tic_tact_toe.infrastructures.IGameRepository;
+import tic_tact_toe.infrastructures.Repositories;
 import tic_tact_toe.viewmodels.args.PlayArgs;
 
 public class GameViewModel {
-    private char currentPlayer = 'X';
-    private char winner = ' ';
-    private final Grid grid = new Grid();
+    private final IGameRepository gameRepository = Repositories.getGameRepository();
+    private final Game game = gameRepository.getGame();
 
     /**
      * Play for the current player at the given position
@@ -16,19 +17,14 @@ public class GameViewModel {
      * @return      True if the game can continue, false otherwise
      */
     public boolean play(final PlayArgs args) {
-        if (grid.play(args.row(), args.col(), currentPlayer)) {
-            currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
-            return true;
-        }
-        winner = currentPlayer;
-        return false;
+        return game.play(args);
     }
 
     public char getCurrentPlayer() {
-        return currentPlayer;
+        return game.getCurrentPlayer();
     }
     
     public char getWinner() {
-        return winner;
+        return game.getWinner();
     }
 }
